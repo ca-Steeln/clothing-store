@@ -1,0 +1,609 @@
+
+<!DOCTYPE html>
+<html lang="en" class="bg-light dark:bg-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steeln | Product Page</title>
+
+    <link href="./styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+</head>
+<body>
+
+  <header class="fixed p-2 w-full">
+    <div class="flex items-center justify-between lg:gap-10 gap-4 w-full h-16 px-4 slate-bg rounded-xl z-50">
+
+      <!-- Logo -->
+      <div class="flex place-content-center w-1/6 h-full min-w-max">
+        <a href="/" class="flex items-center gap-4">
+          <img src="./brand-logo.svg" alt="Brand" class="h-full">
+          <span class="text-lg font-medium text-modes">Brand Logo</span>
+        </a>
+      </div>
+
+      <div class="hidden md:flex justify-between md:w-full">
+        <!-- Primary Navigation -->
+        <nav class="flex lg:gap-4 items-center">
+          <a href="/" class="px-2 py-1 nav-text hover:bg-slate-300 dark:hover:bg-slate-700 duration-100 rounded-lg">Home</a>
+          <a href="#details" class="px-2 py-1 nav-text hover:bg-slate-300 dark:hover:bg-slate-700 duration-100 rounded-lg">Product</a>
+          <a href="#features" class="px-2 py-1 nav-text hover:bg-slate-300 dark:hover:bg-slate-700 duration-100 rounded-lg">Services</a>
+          <a href="#pricing" class="px-2 py-1 nav-text hover:bg-slate-300 dark:hover:bg-slate-700 duration-100 rounded-lg">Prices</a>
+          <a href="#steps" class="px-2 py-1 nav-text hover:bg-slate-300 dark:hover:bg-slate-700 duration-100 rounded-lg">Guid</a>
+          <a href="#faqs" class="px-2 py-1 nav-text hover:bg-slate-300 dark:hover:bg-slate-700 duration-100 rounded-lg">FAQs</a>
+          <a href="/about.html" class="flex gap-2 items-center px-2 py-1 nav-text hover:bg-slate-300 dark:hover:bg-slate-700 duration-100 rounded-lg"> About Us <i class="fa-solid fa-lock"></i> </a>
+        </nav>
+
+        <nav class="flex lg:gap-4 gap-2 items-center">
+          <button type="button" title="theme mode" class="theme-toggle flex gap-2 content-center p-1.5 hover:bg-slate-300 dark:hover:bg-slate-700 duration-100 rounded-lg"><i class="fa-solid fa-circle-half-stroke text-modes text-2xl"></i></button>
+          <a href="#" class="flex gap-1.5 lg:gap-2 items-center px-1 py-0.5 lg:px-2 lg:py-1 nav-text primary-btn rounded-lg duration-100"> Sign Up </a>
+        </nav>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-gray-300 focus:outline-none">
+          <svg class="w-6 h-6 text-modes" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay" class="hidden md:hidden fixed inset-0 overly-modes -z-10"></div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden mt-2 slate-bg p-4 rounded-xl">
+      <nav class="flex flex-col place-items-center gap-2">
+        <a href="/" class="flex items-center justify-center w-full h-10 nav-text text-modes border-2 border-modes rounded-lg focus:border-ps-modes"> Home </a>
+        <a href="#details" class="flex items-center justify-center w-full h-10 nav-text text-modes border-2 border-modes rounded-lg focus:border-ps-modes"> Product Details </a>
+        <a href="#features" class="flex items-center justify-center w-full h-10 nav-text text-modes border-2 border-modes rounded-lg focus:border-ps-modes"> Service Features </a>
+        <a href="#faqs" class="flex items-center justify-center w-full h-10 nav-text text-modes border-2 border-modes rounded-lg focus:border-ps-modes"> Prices </a>
+        <a href="#pricing" class="flex items-center justify-center w-full h-10 nav-text text-modes border-2 border-modes rounded-lg focus:border-ps-modes"> Steps Guid </a>
+        <a href="#steps" class="flex items-center justify-center w-full h-10 nav-text text-modes border-2 border-modes rounded-lg focus:border-ps-modes"> FAQs </a>
+        <a href="/about.html" class="flex items-center justify-center gap-4 w-full h-10 nav-text text-modes border-2 border-modes rounded-lg focus:border-ps-modes"> Contact & About Us <i class="fa-solid fa-lock"></i> </a>
+
+        <hr class="border-t border-modes w-4/6">
+
+        <button type="button" title="theme mode" class="theme-toggle flex items-center justify-center gap-4 w-full h-10 nav-text duration-100 bg-slate-300 dark:bg-slate-700 border-2 rounded-lg"> <i class="fa-solid fa-circle-half-stroke text-modes text-2xl"></i> Theme Modes </button>
+
+        <hr class="border-t border-modes w-4/6">
+
+        <a href="#" title="Explore Full Website" class="flex items-center justify-center gap-4 w-full h-10 primary-btn secondary-nav-text rounded-lg"> Sign Up <i class="fa-solid fa-arrow-right"></i></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="flex justify-center w-full pt-20 screen-h sm:p-4 p-2">
+    <div class="container flex flex-row mx-auto items-center lg:gap-8 md:w-5/6 w-full lg:space-y-16 space-y-8">
+      <div class="grid gap-6 place-content-center">
+        <h1 class="font-bold tracking-tight text-4xl text-modes">Payments tool for software companies</h1>
+        <p class="max-w-2xl font-medium light-text-modes lg:mb-8 md:text-lg lg:text-xl">From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.</p>
+        <nav class="grid grid-flow-col w-fit gap-4 items-center max-[480px]:grid-flow-row max-[480px]:w-full">
+          <a href="#" class="flex items-center justify-center gap-2 h-full px-2 py-1 lg:px-4 lg:py-2 text-sm rounded-lg nav-text regular-btn"> Product & Service Details <i class="fa-solid fa-arrow-right"></i> </a>
+          <a href="#" class="flex items-center justify-center gap-2 h-full px-2 py-1 lg:px-4 lg:py-2 text-sm rounded-lg nav-text primary-btn"> Explore More Products & Services</a>
+        </nav>
+      </div>
+
+      <div class="hidden md:grid place-items-center h-full">
+        <img src="./brand-logo.svg" alt="Brand" class="h-full">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Product Features & Details Section -->
+  <section id="details" class="flex justify-center w-full sm:p-4 p-2">
+      <div class="container block mx-auto items-center md:w-5/6 w-full lg:space-y-16 space-y-8 ">
+
+        <div class="flex md:gap-4 gap-2 w-fit ">
+          <div class="flex flex-row p-1 lg:text-4xl md:text-3xl text-2xl text-modes">
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+          <article class="md:space-y-4 space-y-2">
+            <h2 class="text-modes"> Product Features & Details </h2>
+            <p class="title-desc light-text-modes"> odit Lorem ipsum dolor sit. blanditiis harum aspernatur aliquam similique numquam nulla error!</p>
+          </article>
+        </div>
+
+        <!-- section content -->
+
+        <div class="grid gap-8 rounded-xl ring-1 ring-modes">
+
+          <div class="grid justify-center lg:grid-cols-2 max-lg:grid-flow-row sm:gap-8 gap-16 lg:p-8 md:p-6 p-4 max-sm:h-fit w-full">
+            <div class="grid grid-flow-row gap-8 h-fit">
+
+              <div class="flex flex-col gap-2">
+                <h3 class="font-bold leading-2 xl:text-2xl text-xl text-modes"> Product Title </h3>
+                <p class="light-text-modes w-full h-full">
+                  Product description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus alias corporis similique beatae omnis ipsa aperiam natus id voluptates quaerat?
+                </p>
+              </div>
+
+              <dl class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+                <div class="border-t border-twilight pt-4">
+                  <dt class="font-medium text-modes">Hellow world</dt>
+                  <dd class="mt-2 text-sm light-text-modes">Designed by Good Goods, Inc.</dd>
+                </div>
+                <div class="border-t border-twilight pt-4">
+                  <dt class="font-medium text-modes">Origin</dt>
+                  <dd class="mt-2 text-sm light-text-modes">Designed by Designed by Good Goods, Inc Good Goods, Inc.</dd>
+                </div>
+                <div class="border-t border-twilight pt-4">
+                  <dt class="font-medium text-modes">Size</dt>
+                  <dd class="mt-2 text-sm light-text-modes">Designed by Good Goods, Inc.Designed by Good Goods, IncDesigned by Good Goods, Inc</dd>
+                </div>
+                <div class="border-t border-twilight pt-4">
+                  <dt class="font-medium text-modes">Origin</dt>
+                  <dd class="mt-2 text-sm light-text-modes">Designed by by Good Goods, Inc Goods, Inc.</dd>
+                </div>
+                <div class="border-t border-twilight pt-4">
+                  <dt class="font-medium text-modes">Include</dt>
+                  <dd class="mt-2 text-sm light-text-modes">Designed by Good Goods, Inc.Designed by Good Goods, IncDesigned by Good Goods, Inc</dd>
+                </div>
+                <div class="border-t border-twilight pt-4">
+                  <dt class="font-medium text-modes">Origin</dt>
+                  <dd class="mt-2 text-sm light-text-modes">Designed by by Good Goods, Inc Goods, Inc.</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div class="grid grid-cols-2 grid-row-2 md:gap-4 gap-2 w-full h-fit">
+              <img src="/steeln.jpg" alt="Product Image" class="aspect-square w-full h-full object-cover rounded-lg ">
+              <img src="/lc.jpg" alt="Product Image" class="aspect-square w-full h-full object-cover rounded-lg ">
+              <img src="/purple.png" alt="Product Image" class="aspect-square w-full h-full object-cover rounded-lg ">
+              <img src="/lando-landing-page.png" alt="Product Image" class="aspect-square w-full h-full object-cover rounded-lg  ">
+            </div>
+          </div>
+
+          <div class="flex lg:flex-row flex-col gap-8">
+
+            <div class="lg:pl-8 md:pl-6 pl-4 lg:flex-auto">
+              <div class="flex items-center gap-x-4">
+                <h4 class="flex-none text-sm font-semibold leading-6 text-ps-modes">What’s included</h4>
+                <div class="h-px flex-auto bg-neutral-400 dark:bg-neutral-600"></div>
+              </div>
+              <ul role="list" class="my-8 grid grid-cols-1 gap-4 text-sm leading-6 light-text-modes sm:grid-cols-2 sm:gap-6">
+                <li class="flex items-center gap-x-3">
+                  <i class="fa-regular fa-circle-check text-ps-modes"></i>
+                  Private forum access
+                </li>
+                <li class="flex items-center gap-x-3">
+                  <i class="fa-regular fa-circle-check text-ps-modes"></i>
+                  Member resources
+                </li>
+                <li class="flex items-center gap-x-3">
+                  <i class="fa-regular fa-circle-check text-ps-modes"></i>
+                  Entry to annual conference
+                </li>
+                <li class="flex items-center gap-x-3">
+                  <i class="fa-regular fa-circle-check text-ps-modes"></i>
+                  Official member t-shirt
+                </li>
+              </ul>
+            </div>
+
+            <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+              <div class="rounded-xl slate-bg text-center lg:flex lg:flex-col lg:justify-center lg:py-16 py-10">
+                <div class="mx-auto max-w-xs px-8">
+                  <p class="text-base font-semibold light-text-modes">Pay once, own it forever</p>
+                  <p class="mt-6 flex items-baseline justify-center gap-x-2">
+                    <span class="text-5xl font-bold tracking-tight text-modes">$349</span>
+                    <span class="text-sm font-semibold leading-6 tracking-wide light-text-modes">USD</span>
+                  </p>
+                  <a href="#" class="mt-10 block w-full rounded-lg px-3 py-2 text-center text-sm font-semibold shadow-sm primary-btn focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Buy Now</a>
+                  <p class="mt-6 text-xs leading-5 light-text-modes">Invoices and receipts available for easy company reimbursement</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="grid gap-4" role="list" id="related-products">
+          <div class="flex items-center gap-4 py-4">
+            <h3 class="max-sm:order-2 text-2xl font-bold leading-6 text-modes w-full"> Related Products </h3>
+            <div class="max-sm:order-1 flex items-center justify-center slate-bg h-fit aspect-square w-10 rounded-full" title="Not included: Extra charge for this service.">
+              <i class="text-lg fa-solid fa-lock text-modes"></i>
+            </div>
+          </div>
+
+          <div class="flex lg:flex-row flex-col rounded-xl ring-1 ring-modes">
+            <div class="p-8 lg:flex-auto">
+
+              <h3 class="text-2xl font-bold tracking-tight text-modes">Product Title</h3>
+              <p class="mt-6 text-base leading-7 light-text-modes">Product Description. Lorem ipsum dolor sit amet consect etur adipisicing elit. Itaque amet indis perferendis blanditiis repellendus etur quidem assumenda.</p>
+              <div class="mt-8 mb-4 flex items-center gap-x-4">
+                <h4 class="flex-none text-sm font-semibold leading-6 text-ps-modes"> Closer Look </h4>
+                <div class="h-px flex-auto bg-neutral-400 dark:bg-neutral-600"></div>
+              </div>
+
+              <div class="grid place-content-center gap-4 col-auto-fit-minmax">
+
+                <div class="h-40"> <img src="./steeln.jpg" alt="Product Image" class="h-full w-full object-cover rounded-lg"> </div>
+                <div class="h-40"> <img src="./lc.jpg" alt="Product Image" class="h-full w-full object-cover rounded-lg"> </div>
+                <div class="h-40"> <img src="./lando-landing-page.png" alt="Product Image object-cover" class="h-full w-full object-cover rounded-lg"> </div>
+                <div class="h-40"> <img src="./purple.png" alt="Product Image" class="h-full w-full object-cover rounded-lg"> </div>
+
+              </div>
+
+            </div>
+            <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+              <div class="rounded-xl slate-bg py-10 text-center lg:flex lg:flex-col lg:justify-center h-full lg:py-16">
+                <div class="mx-auto max-w-xs px-8 ">
+                  <p class="text-base font-semibold light-text-modes">Pay once, own it forever</p>
+                  <p class="mt-6 flex items-baseline justify-center gap-x-2">
+                    <span class="text-5xl font-bold tracking-tight text-modes">$349</span>
+                    <span class="text-sm font-semibold leading-6 tracking-wide light-text-modes">USD</span>
+                  </p>
+                  <a href="#" class="mt-10 block w-full rounded-lg primary-btn px-3 py-2 text-center text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Buy Now</a>
+                  <p class="mt-6 text-xs leading-5 light-text-modes">Invoices and receipts available for easy company reimbursement</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+  </section>
+
+  <!-- Service Features Section -->
+  <section id="features" class="flex justify-center w-full sm:p-4 p-2">
+
+    <div class="container block mx-auto md:w-5/6 w-full lg:space-y-16 space-y-8">
+      <div class="flex md:gap-4 gap-2 w-full">
+        <div class="flex flex-row p-1 lg:text-4xl md:text-3xl text-2xl text-modes">
+            <i class="fa-solid fa-quote-left"></i>
+        </div>
+        <article class="md:space-y-4 space-y-2 w-full">
+            <h2 class="text-modes"> Service Features </h2>
+            <p class="title-desc light-text-modes"> <!-- fix --> Tellus rutrum Tellus Tellus rutrum tellus pellentesque eu tincidunt tortor condimentum.Tellus rutrum tellus pellentesque eu tincidunt tortor condimentum. Tellus rutrum tellus pellentesque eu tincidunt tortor condimentum. rutrum tellus pellentesque eu tincidunt tortor condimentum. Tellus rutrum tellus pellentesque eu tincidunt tortor condimentum. tellus pellentesque eu tincidunt tortor condimentum. </p>
+        </article>
+      </div>
+
+      <div class="grid place-items-center md:col-span-2 col-auto-fit-minmax-frame gap-4 w-full">
+
+        <div class="w-full slate-bg rounded-xl p-4 space-y-4">
+          <div class="grid place-items-center sm:w-16 w-12 aspect-square sm:text-2xl text-xl rounded-xl card-bg text-ps-modes">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <h3 class="font-bold leading-2 xl:text-2xl text-xl text-modes w-full">Hello World</h3>
+            <p class="light-text-modes line-clamp-[8] w-full h-full"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus alias corporis similique beatae omnis ipsa aperiam natus id voluptates quaerat? Itaque recusandae reprehenderit incidunt laborum sequi? Autem vitae consequuntur tenetur. </p>
+          </div>
+        </div>
+
+        <div class="w-full slate-bg rounded-xl p-4 space-y-4">
+          <div class="grid place-items-center sm:w-16 w-12 aspect-square sm:text-2xl text-xl rounded-xl card-bg text-ps-modes">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+            </svg>
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <h3 class="font-bold leading-2 xl:text-2xl text-xl text-modes w-full">We're Here To Help You</h3>
+            <p class="light-text-modes line-clamp-[8] w-full h-full"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus alias corporis similique beatae omnis ipsa aperiam natus id voluptates quaerat? Itaque recusandae reprehenderit incidunt laborum sequi? Autem vitae consequuntur tenetur. </p>
+          </div>
+        </div>
+
+        <div class="w-full slate-bg rounded-xl p-4 space-y-4">
+          <div class="grid place-items-center sm:w-16 w-12 aspect-square sm:text-2xl text-xl rounded-xl card-bg text-ps-modes">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 0 0-8.862 12.872M12.75 3.031a9 9 0 0 1 6.69 14.036m0 0-.177-.529A2.25 2.25 0 0 0 17.128 15H16.5l-.324-.324a1.453 1.453 0 0 0-2.328.377l-.036.073a1.586 1.586 0 0 1-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 0 1-5.276 3.67m0 0a9 9 0 0 1-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25" />
+            </svg>
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <h3 class="font-bold leading-2 xl:text-2xl text-xl text-modes w-full">Join And Get</h3>
+            <p class="light-text-modes line-clamp-[8] w-full h-full"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus alias corporis similique beatae omnis ipsa aperiam natus id voluptates quaerat? Itaque recusandae reprehenderit incidunt laborum sequi? Autem vitae consequuntur tenetur. </p>
+          </div>
+        </div>
+
+        <div class="w-full slate-bg rounded-xl p-4 space-y-4">
+          <div class="grid place-items-center sm:w-16 w-12 aspect-square sm:text-2xl text-xl rounded-xl card-bg text-ps-modes">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+            </svg>
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <h3 class="font-bold leading-2 xl:text-2xl text-xl text-modes w-full">Good & Easy</h3>
+            <p class="light-text-modes line-clamp-[8] w-full h-full"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus alias corporis similique beatae omnis ipsa aperiam natus id voluptates quaerat? Itaque recusandae reprehenderit incidunt laborum sequi? Autem vitae consequuntur tenetur. </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Service Pricing Cards Section -->
+  <section id="pricing" class="flex justify-center w-full sm:p-4 p-2">
+  <div class="container block mx-auto items-center md:w-5/6 w-full lg:space-y-16 space-y-8">
+
+    <div class="flex md:gap-4 gap-2 w-full">
+      <div class="hidden sm:flex flex-row p-1 lg:text-4xl md:text-3xl text-2xl text-modes">
+          <i class="fa-solid fa-quote-left"></i>
+      </div>
+      <article class="max-sm:order-2 md:space-y-4 space-y-2 w-full">
+          <h2 class="text-modes"> Choose the right service for you </h2>
+          <p class="title-desc light-text-modes"> <!-- fix --> Tellus rutrum Tellus Tellus rutrum tellus pellentesque eu tincidunt tortor condimentum.Tellus rutrum tellus pellentesque eu tincidunt tortor condimentum. Tellus rutrum tellus pellentesque eu tincidunt tortor condimentum. rutrum tellus pellentesque eu tincidunt tortor condimentum. Tellus rutrum tellus pellentesque eu tincidunt tortor condimentum. tellus pellentesque eu tincidunt tortor condimentum. </p>
+      </article>
+      <div class="max-sm:order-1 flex items-center justify-center slate-bg h-fit aspect-square w-10 rounded-full" title="Not included: Extra charge for this service.">
+        <i class="text-lg fa-solid fa-lock text-modes"></i>
+      </div>
+    </div>
+
+      <div class="flex lg:flex-row flex-col items-center justify-center md:gap-8 gap-4">
+
+      <div class="p-8 w-full slate-bg rounded-xl">
+          <div class="flex flex-col gap-2">
+          <h4 class="font-bold leading-2 text-modes"> Our Product & Service </h4>
+          <p class="light-text-modes w-full h-full">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </p>
+          </div>
+          <div>
+          <p class="mt-6 flex items-baseline justify-center gap-x-2">
+              <span class="text-5xl font-bold tracking-tight text-modes">$159</span>
+              <span class="text-sm font-semibold leading-6 tracking-wide light-text-modes">USD</span>
+          </p>
+          </div>
+          <a href="#" class="mt-10 block w-full rounded-lg regular-btn px-3 py-2 text-center text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+          Shop Now
+          </a>
+          <ul role="list" class="mt-8 grid gap-4 text-sm leading-6 light-text-modes sm:gap-6">
+          <li class="flex items-center gap-x-3">
+              <i class="fa-regular fa-circle-check text-ps-modes"></i>
+              Private forum access
+          </li>
+          <li class="flex items-center gap-x-3">
+              <i class="fa-regular fa-circle-check text-ps-modes"></i>
+              Member resources
+          </li>
+          <li class="flex items-center gap-x-3">
+              <i class="fa-regular fa-circle-check text-ps-modes"></i>
+              Entry to annual conference
+          </li>
+          <li class="flex items-center gap-x-3">
+              <i class="fa-regular fa-circle-check text-ps-modes"></i>
+              Official member t-shirt
+          </li>
+          </ul>
+      </div>
+
+      <div class="p-8 w-full slate-bg rounded-xl">
+
+          <div class="flex flex-col gap-2">
+          <h4 class="font-bold leading-2 text-modes"> Our Product & Service </h4>
+          <p class="light-text-modes w-full h-full">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </p>
+          </div>
+          <div>
+          <p class="mt-6 flex items-baseline justify-center gap-x-2">
+              <span class="text-5xl font-bold tracking-tight text-modes">$349</span>
+              <span class="text-sm font-semibold leading-6 tracking-wide light-text-modes">USD</span>
+          </p>
+          </div>
+          <a href="#" class="mt-10 block w-full rounded-lg primary-btn px-3 py-2 text-center text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+          Shop Now
+          </a>
+          <ul role="list" class="mt-8 grid gap-4 text-sm leading-6 light-text-modes sm:gap-6">
+          <li class="flex items-center gap-x-3">
+              <i class="fa-regular fa-circle-check text-ps-modes"></i>
+              Private forum access
+          </li>
+          <li class="flex items-center gap-x-3">
+              <i class="fa-regular fa-circle-check text-ps-modes"></i>
+              Member resources
+          </li>
+          <li class="flex items-center gap-x-3">
+              <i class="fa-regular fa-circle-check text-ps-modes"></i>
+              Entry to annual conference
+          </li>
+          <li class="flex items-center gap-x-3">
+              <i class="fa-regular fa-circle-check text-ps-modes"></i>
+              Official member t-shirt
+          </li>
+          <li class="flex items-center gap-x-3">
+              <i class="fa-regular fa-circle-check text-ps-modes"></i>
+              Member resources
+          </li>
+          <li class="flex items-center gap-x-3">
+              <i class="fa-regular fa-circle-check text-ps-modes"></i>
+              Entry to annual conference
+          </li>
+          <li class="flex items-center gap-x-3">
+              <i class="fa-regular fa-circle-check text-ps-modes"></i>
+              Official member t-shirt
+          </li>
+          </ul>
+
+      </div>
+
+      <div class="p-8 w-full slate-bg rounded-xl">
+
+          <div class="flex flex-col gap-2">
+          <h4 class="font-bold leading-2 text-modes"> Service </h4>
+          <p class="light-text-modes w-full h-full">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </p>
+          </div>
+          <div>
+          <p class="mt-6 flex items-baseline justify-center gap-x-2">
+              <span class="text-5xl font-bold tracking-tight text-modes">$32</span>
+              <span class="text-sm font-semibold leading-6 tracking-wide light-text-modes">USD</span>
+          </p>
+          </div>
+          <a href="#" class="mt-10 block w-full regular-btn rounded-lg px-3 py-2 text-center text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+          Buy Plan
+          </a>
+          <ul role="list" class="mt-8 grid gap-4 text-sm leading-6 light-text-modes sm:gap-6">
+          <li class="flex items-center gap-x-3">
+              <i class="fa-regular fa-circle-check text-ps-modes"></i>
+              Private forum access
+          </li>
+          <li class="flex items-center gap-x-3">
+              <i class="fa-regular fa-circle-check text-ps-modes"></i>
+              Member resources
+          </li>
+          </ul>
+
+      </div>
+
+      </div>
+
+  </div>
+  </section>
+
+  <!-- Step by Step Section -->
+  <section id="steps" class="flex justify-center w-full sm:p-4 p-2 ">
+    <div class="container block mx-auto items-center md:w-5/6 w-full space-y-16">
+
+      <div class="flex md:gap-4 gap-2 w-full">
+        <div class="hidden sm:flex flex-row p-1 lg:text-4xl md:text-3xl text-2xl text-modes">
+            <i class="fa-solid fa-quote-left"></i>
+        </div>
+        <article class="max-sm:order-2 md:space-y-4 space-y-2 w-full">
+            <h2 class="text-modes"> Step By Step Guid </h2>
+            <p class="title-desc light-text-modes"> <!-- fix --> Tellus rutrum Tellus Tellus rutrum tellus pellentesque eu tincidunt tortor condimentum.Tellus rutrum tellus pellentesque eu tincidunt tortor condimentum. Tellus rutrum tellus pellentesque eu tincidunt tortor condimentum. rutrum tellus pellentesque eu tincidunt tortor condimentum. Tellus rutrum tellus pellentesque eu tincidunt tortor condimentum. tellus pellentesque eu tincidunt tortor condimentum. </p>
+        </article>
+        <div class="max-sm:order-1 flex items-center justify-center slate-bg h-fit aspect-square w-10 rounded-full" title="Not included: Extra charge for this service.">
+          <i class="text-lg fa-solid fa-lock text-modes"></i>
+        </div>
+      </div>
+
+      <div class="flex flex-col w-full justify-center gap-16">
+      <div class="flex w-full flex-col items-center justify-between gap-y-10 lg:flex-row lg:gap-x-8 lg:gap-y-0 xl:gap-x-10">
+
+          <div class="flex items-start gap-4">
+          <div class="flex size-12 shrink-0 items-center justify-center rounded-full border-2 border-solid border-ps-modes bg-transparent text-modes">
+              <span class="text-base font-bold leading-7 text-modes">1</span>
+          </div>
+          <div class="flex flex-col">
+              <h3 class="mb-2 text-base font-bold leading-tight text-modes"> <!-- fix --> Setup your Account </h3>
+              <p class="leading-7 light-text-modes"> <!-- fix --> Condimentum vit pellemsque habitant morbi at molestie. </p>
+          </div>
+          </div>
+
+          <div class="rotate-90 lg:rotate-0">
+          <i class="font-bold text-2xl fa-solid fa-chevron-right text-modes"></i>
+          </div>
+
+          <div class="flex items-start gap-4">
+          <div class="flex size-12 shrink-0 items-center justify-center rounded-full border-2 border-solid border-ps-modes bg-transparent text-modes">
+              <span class="text-base font-bold leading-7 text-modes">2</span>
+          </div>
+          <div class="flex flex-col">
+              <h3 class="mb-2 text-base font-bold leading-tight text-modes"> <!-- fix --> Setup your Account </h3>
+              <p class="leading-7 light-text-modes"> <!-- fix --> Condimentum vit pellemsque habitant morbi at molestie. </p>
+          </div>
+          </div>
+
+          <div class="rotate-90 lg:rotate-0">
+          <i class="font-bold text-2xl fa-solid fa-chevron-right text-modes"></i>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="flex size-12 shrink-0 items-center justify-center rounded-full border-2 border-solid border-ps-modes bg-transparent text-modes">
+                <span class="text-base font-bold leading-7 text-modes">3</span>
+            </div>
+            <div class="flex flex-col">
+                <h3 class="mb-2 text-base font-bold leading-tight text-modes"> <!-- fix --> Setup your Account </h3>
+                <p class="leading-7 light-text-modes"> <!-- fix --> Condimentum vit pellemsque habitant morbi at molestie. </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faqs" class="flex w-full sm:p-4 p-2 ">
+
+    <div class="container block mx-auto items-center md:w-5/6 w-full lg:space-y-16 space-y-8 ">
+      <div class="flex md:gap-4 gap-2 w-full ">
+        <div class="hidden sm:flex flex-row p-1 lg:text-4xl md:text-3xl text-2xl text-modes">
+          <i class="fa-solid fa-quote-left"></i>
+        </div>
+        <article class="max-sm:order-2 md:space-y-4 space-y-2 w-full">
+          <h2 class="text-modes"> FAQs </h2>
+          <p class="title-desc light-text-modes"> Lorem ipsum dolor sit amet aicing elit. Neitatibus, facilis! </p>
+        </article>
+        <div class="max-sm:order-1 flex items-center justify-center slate-bg h-fit aspect-square w-10 rounded-full" title="Not included: Extra charge for this service.">
+          <i class="text-lg fa-solid fa-lock text-modes"></i>
+        </div>
+      </div>
+
+      <div class="w-full divide-y divide-neutral-300 dark:divide-neutral-700 ">
+        <div class="flex items-center justify-between font-bold text-2xl py-4 px-3"><h4 class="text-modes">Frequently asked questions</h4> <i class="fa-regular fa-circle-question text-ps-modes"></i></div>
+        <details class="group p-4">
+            <summary class="grid grid-flow-col gap-8 cursor-pointer list-none items-center justify-between font-medium">
+                <span class="text-modes"> How does the billing work? </span>
+                <span class="transition group-open:rotate-180"><i class="font-semibold fa-solid fa-chevron-down text-modes"></i></span>
+            </summary>
+            <p class="group-open:animate-fadeIn mt-3 light-text-modes">Springerdata offers a variety of
+                billing options, including monthly and annual subscription plans, as well as pay-as-you-go
+                pricing for certain services. Payment is typically made through a credit card or other
+                secure online payment method.
+            </p>
+        </details>
+
+        <details class="group p-4">
+          <summary class="grid grid-flow-col gap-8 cursor-pointer list-none items-center justify-between font-medium">
+              <span class="text-modes"> How does the billing does the billing work? </span>
+              <span class="transition group-open:rotate-180"><i class="font-semibold fa-solid fa-chevron-down text-modes"></i></span>
+          </summary>
+          <p class="group-open:animate-fadeIn mt-3 light-text-modes">
+            Springerdata offers a variety of
+            billing options, including monthly and annual
+          </p>
+        </details>
+      </div>
+
+
+    </div>
+
+  </section>
+
+  <footer class="p-2 w-full space-y-4 min-h-40">
+    <div class="grid p-4 gap-8 slate-bg rounded-xl">
+      <div class="flex items-center justify-center flex-col gap-4 h-full text-center p-8 ring-1 ring-modes rounded-xl">
+        <h3 class="font-bold leading-2 xl:text-2xl text-xl text-modes w-full"> Don't Miss Your Great Chance </h3>
+        <p class="light-text-modes font-medium text-xs"> Save up to %66 by taking this deal. </p>
+        <a href="#" class="flex items-center justify-center mt-6 px-2 py-1 lg:px-4 lg:py-2 text-sm rounded-lg nav-text primary-btn"> Buy Now </a>
+      </div>
+      <div class="grid md:justify-around justify-items-center md:grid-flow-col grid-flow-row gap-8">
+        <div class="xl:w-40 w-32">
+          <img src="./brand-logo.svg" alt="Brand" class="w-full">
+        </div>
+        <nav class="grid place-content-center col-auto-fit-minmax-12 grid-flow-col w-fit gap-2">
+          <!-- Social Media -->
+          <a href="#" class="flex items-center justify-center text-xl text-modes p-4 hover:text-ps-modes rounded-full duration-100"><i class="fa-solid fa-envelope"></i></a>
+          <a href="#" class="flex items-center justify-center text-xl text-modes p-4 hover:text-ps-modes rounded-full duration-100"><i class="fa-brands fa-shopify"></i></a>
+          <a href="#" class="flex items-center justify-center text-xl text-modes p-4 hover:text-ps-modes rounded-full duration-100"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="flex items-center justify-center text-xl text-modes p-4 hover:text-ps-modes rounded-full duration-100"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="flex items-center justify-center text-xl text-modes p-4 hover:text-ps-modes rounded-full duration-100"><i class="fa-brands fa-youtube"></i></i></a>
+        </nav>
+      </div>
+
+    </div>
+    <div class="grid place-content-center w-full h-fit p-4 px-1 slate-bg rounded-xl">
+      <p class="text-md font-medium light-text-modes"> 2024 Copyright © Steeln </p>
+    </div>
+
+  </footer>
+
+  <script src="./script.js" defer></script>
+
+</body>
+</html>
