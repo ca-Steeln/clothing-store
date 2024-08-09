@@ -1,16 +1,17 @@
 
-document.getElementById('menu-btn').addEventListener('click', () => {
+document.getElementById('menu-btn').addEventListener('click', (e) => {
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
     mobileMenu.classList.toggle('hidden');
     mobileMenuOverlay.classList.toggle('hidden');
+    e.stopImmediatePropagation();
 });
 
-document.getElementById('mobile-menu-overlay').addEventListener('click', () => {
+document.addEventListener('click', () => {
   const mobileMenu = document.getElementById('mobile-menu');
   const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
-  mobileMenu.classList.toggle('hidden');
-  mobileMenuOverlay.classList.toggle('hidden');
+  mobileMenu.classList.add('hidden');
+  mobileMenuOverlay.classList.add('hidden');
 });
 
 const toggleThemeButtons = document.querySelectorAll('.theme-toggle');
