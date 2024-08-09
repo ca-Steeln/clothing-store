@@ -36,3 +36,28 @@ toggleThemeButtons.forEach(button => {
     }
     });
 });
+
+
+function openModal(imgElement) {
+    // Get the full-size image URL from the data attribute
+    var fullImageUrl = imgElement.getAttribute('src');
+
+    // Set the modal image source
+    document.getElementById('modalImage').src = fullImageUrl;
+
+    // Display the modal
+    document.getElementById('imageModal').classList.remove('hidden');
+    document.getElementById('img-model-overlay').classList.remove('hidden');
+}
+
+function closeModal() {
+    // Hide the modal
+    document.getElementById('imageModal').classList.add('hidden');
+    document.getElementById('img-model-overlay').classList.add('hidden');
+
+    // Optionally, clear the image source
+    document.getElementById('modalImage').src = '';
+}
+
+
+

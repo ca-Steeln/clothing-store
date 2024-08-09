@@ -76,7 +76,7 @@
     </div>
 
     <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu-overlay" class="hidden md:hidden fixed inset-0 overly-modes -z-10"></div>
+    <div id="mobile-menu-overlay" class="hidden md:hidden fixed inset-0 overly-bg -z-10"></div>
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden mt-2 slate-bg p-4 rounded-xl">
       <nav class="flex flex-col place-items-center gap-2">
@@ -104,6 +104,19 @@
       </nav>
     </div>
   </header>
+
+  <!-- Modal -->
+  <div id="imageModal" class="fixed flex items-center justify-center p-4 hidden size-full">
+    <div id="img-model-overlay" class="hidden fixed inset-0 overly-bg w-full h-full" onclick="closeModal()"></div>
+    <div class="bg-white lg:max-w-6xl md:max-w-2xl max-w-xl w-fit lg:h-5/6 h-fit relative rounded-xl">
+        <img id="modalImage" src="" alt="Larger view" class="h-full z-10 rounded-lg" />
+        <span class="flex items-center absolute right-0 top-0 cursor-pointer md:size-6 size-4 rounded-full m-2 bg-slate-500 bg-opacity-60" onclick="closeModal()">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 mx-auto">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </span>
+    </div>
+  </div>
 
   <!-- Hero Section -->
   <main>
@@ -187,10 +200,10 @@
             </div>
 
             <div class="grid grid-cols-2 grid-row-2 md:gap-4 gap-2 w-full h-fit">
-              <img src="./steeln.jpg" alt="Product Image" class="aspect-square w-full h-full object-cover rounded-lg ">
-              <img src="./lc.jpg" alt="Product Image" class="aspect-square w-full h-full object-cover rounded-lg ">
-              <img src="./purple.png" alt="Product Image" class="aspect-square w-full h-full object-cover rounded-lg ">
-              <img src="./lando-landing-page.png" alt="Product Image" class="aspect-square w-full h-full object-cover rounded-lg  ">
+              <img src="./steeln.jpg" alt="Product Image" class="aspect-square w-full h-full hover:ring-2 ring-primary cursor-pointer object-cover rounded-lg duration-200" onclick="openModal(this)">
+              <img src="./lc.jpg" alt="Product Image" class="aspect-square w-full h-full hover:ring-2 ring-primary cursor-pointer object-cover rounded-lg duration-200" onclick="openModal(this)">
+              <img src="./purple.png" alt="Product Image" class="aspect-square w-full h-full hover:ring-2 ring-primary cursor-pointer object-cover rounded-lg duration-200" onclick="openModal(this)">
+              <img src="./lando-landing-page.png" alt="Product Image" class="aspect-square w-full h-full hover:ring-2 ring-primary cursor-pointer object-cover rounded-lg duration-200" onclick="openModal(this)">
             </div>
           </div>
 
@@ -274,10 +287,10 @@
 
               <div class="grid place-content-center gap-4 col-auto-fit-minmax">
 
-                <div class="h-40"> <img src="./steeln.jpg" alt="Product Image" class="h-full w-full object-cover rounded-lg"> </div>
-                <div class="h-40"> <img src="./lc.jpg" alt="Product Image" class="h-full w-full object-cover rounded-lg"> </div>
-                <div class="h-40"> <img src="./lando-landing-page.png" alt="Product Image object-cover" class="h-full w-full object-cover rounded-lg"> </div>
-                <div class="h-40"> <img src="./purple.png" alt="Product Image" class="h-full w-full object-cover rounded-lg"> </div>
+                <div class="h-40"> <img src="./steeln.jpg" alt="Product Image" class="h-full w-full cursor-pointer object-cover rounded-lg" onclick="openModal(this)"> </div>
+                <div class="h-40"> <img src="./lc.jpg" alt="Product Image" class="h-full w-full cursor-pointer object-cover rounded-lg" onclick="openModal(this)"> </div>
+                <div class="h-40"> <img src="./lando-landing-page.png" alt="Product Image object-cover" class="h-full w-full cursor-pointer object-cover rounded-lg" onclick="openModal(this)"> </div>
+                <div class="h-40"> <img src="./purple.png" alt="Product Image" class="h-full w-full cursor-pointer object-cover rounded-lg" onclick="openModal(this)"> </div>
 
               </div>
 
@@ -309,10 +322,10 @@
 
               <div class="grid place-content-center gap-4 col-auto-fit-minmax">
 
-                <div class="h-40"> <img src="./steeln.jpg" alt="Product Image" class="h-full w-full object-cover rounded-lg"> </div>
-                <div class="h-40"> <img src="./lc.jpg" alt="Product Image" class="h-full w-full object-cover rounded-lg"> </div>
-                <div class="h-40"> <img src="./lando-landing-page.png" alt="Product Image object-cover" class="h-full w-full object-cover rounded-lg"> </div>
-                <div class="h-40"> <img src="./purple.png" alt="Product Image" class="h-full w-full object-cover rounded-lg"> </div>
+                <div class="h-40"> <img src="./steeln.jpg" alt="Product Image" class="h-full w-full cursor-pointer object-cover rounded-lg" onclick="openModal(this)"> </div>
+                <div class="h-40"> <img src="./lc.jpg" alt="Product Image" class="h-full w-full cursor-pointer object-cover rounded-lg" onclick="openModal(this)"> </div>
+                <div class="h-40"> <img src="./lando-landing-page.png" alt="Product Image object-cover" class="h-full w-full cursor-pointer object-cover rounded-lg" onclick="openModal(this)"> </div>
+                <div class="h-40"> <img src="./purple.png" alt="Product Image" class="h-full w-full cursor-pointer object-cover rounded-lg" onclick="openModal(this)"> </div>
 
               </div>
 
