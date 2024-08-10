@@ -105,11 +105,11 @@
 
   <!-- Modal -->
   <div id="imageModal" class="fixed flex items-center justify-center p-4 hidden size-full">
-    <div id="img-model-overlay" class="hidden fixed inset-0 overly-bg w-full h-full" onclick="closeModal()"></div>
-    <div class="bg-white lg:max-w-6xl md:max-w-2xl max-w-xl w-fit lg:h-5/6 h-fit relative rounded-xl">
+    <div id="img-model-overlay" class="hidden fixed inset-0 overly-bg w-full h-full z-10" onclick="closeModal()"></div>
+    <div class="bg-white lg:max-w-6xl md:max-w-2xl max-w-xl w-fit lg:h-5/6 h-fit relative rounded-xl z-20">
         <img id="modalImage" src="" alt="Larger view" class="h-full z-10 rounded-lg" />
-        <span class="flex items-center absolute right-0 top-0 cursor-pointer md:size-6 size-4 rounded-full m-2 bg-slate-500 bg-opacity-60" onclick="closeModal()">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 mx-auto">
+        <span class="absolute right-0 top-0 cursor-pointer md:size-6 size-4 rounded-full m-2 bg-black/50" onclick="closeModal()">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-full">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
           </svg>
         </span>
@@ -283,47 +283,7 @@
                 <div class="h-px flex-auto bg-neutral-400 dark:bg-neutral-600"></div>
               </div>
 
-              <div class="grid place-content-center gap-4 col-auto-fit-minmax">
-
-                <div class="h-40"> <img src="./product.svg" alt="Product Image" class="h-full w-full cursor-pointer object-cover bg-light rounded-lg" onclick="openModal(this)"> </div>
-                <div class="h-40"> <img src="./product.svg" alt="Product Image" class="h-full w-full cursor-pointer object-cover bg-light rounded-lg" onclick="openModal(this)"> </div>
-                <div class="h-40"> <img src="./product.svg" alt="Product Image" class="h-full w-full cursor-pointer object-cover bg-light rounded-lg" onclick="openModal(this)"> </div>
-                <div class="h-40"> <img src="./product.svg" alt="Product Image" class="h-full w-full cursor-pointer object-cover bg-light rounded-lg" onclick="openModal(this)"> </div>
-
-              </div>
-
-            </div>
-            <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
-              <div class="rounded-lg slate-bg py-10 text-center lg:flex lg:flex-col lg:justify-center h-full lg:py-16">
-                <div class="mx-auto max-w-xs px-8 ">
-                  <p class="text-base font-semibold light-text-modes">Pay once, own it forever</p>
-                  <p class="mt-6 flex items-baseline justify-center gap-x-2">
-                    <span class="text-5xl font-bold tracking-tight text-modes">$18,54</span>
-                    <span class="text-sm font-semibold leading-6 tracking-wide light-text-modes">USD</span>
-                  </p>
-
-                  <div class="mt-10 grid gap-4">
-                    <a title="Buy Now" href="#" class="block w-full rounded-lg primary-btn sm:px-4 sm:py-2 px-6 py-4 text-center text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Buy Now</a>
-                    <a title="More Details" href="#" class="block w-full rounded-lg regular-btn sm:px-4 sm:py-2 px-6 py-4 text-center text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">More Details</a>
-                  </div>
-
-                  <p class="mt-6 text-xs leading-5 light-text-modes">Invoices and receipts available for easy company reimbursement</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex lg:flex-row flex-col rounded-xl ring-1 ring-modes">
-            <div class="p-8 lg:flex-auto">
-
-              <h3 class="text-2xl font-bold tracking-tight text-modes">Product Title</h3>
-              <p class="mt-6 text-base leading-7 light-text-modes">Product Description. Lorem ipsum dolor sit amet consect etur adipisicing elit. Itaque amet indis perferendis blanditiis repellendus etur quidem assumenda.</p>
-              <div class="mt-8 mb-4 flex items-center gap-x-4">
-                <h4 class="flex-none text-sm font-semibold leading-6 text-ps-modes"> Closer Look </h4>
-                <div class="h-px flex-auto bg-neutral-400 dark:bg-neutral-600"></div>
-              </div>
-
-              <div class="grid place-content-center gap-4 col-auto-fit-minmax">
+              <div class="grid place-content-center space-x-4 col-auto-fit-minmax">
 
                 <div class="h-40"> <img src="./product.svg" alt="Product Image" class="h-full w-full cursor-pointer object-cover bg-light rounded-lg" onclick="openModal(this)"> </div>
                 <div class="h-40"> <img src="./product.svg" alt="Product Image" class="h-full w-full cursor-pointer object-cover bg-light rounded-lg" onclick="openModal(this)"> </div>
@@ -746,7 +706,7 @@
       <div class="flex items-center justify-center flex-col gap-4 h-full text-center p-8 ring-1 ring-modes rounded-xl">
         <h3 class="font-bold leading-2 xl:text-2xl text-xl text-modes w-full"> Don't Miss Your Great Chance </h3>
         <small class="light-text-modes font-medium text-xs"> Save up to %66 by taking this deal. </small>
-        <a href="#" title="Shop Now" class="flex items-center justify-center mt-6 sm:px-4 sm:py-2 px-6 py-4 text-sm rounded-lg nav-text primary-btn"> Shop Now </a>
+        <a href="#" title="Shop Now" class="flex items-center justify-center mt-6 md:px-4 md:py-2 px-6 py-4 text-sm rounded-lg nav-text primary-btn"> Shop Now </a>
       </div>
       <div class="grid md:justify-around justify-items-center md:grid-flow-col grid-flow-row gap-8">
         <div class="xl:w-40 w-32">
