@@ -1,0 +1,283 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="bg-light dark:bg-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Discover the latest trends in fashion at our online clothing store. Shop now for trendy clothing, affordable prices, and fast shipping.">
+    <meta name="keywords" content="clothing store, buy clothes online, trendy clothing, fashion store, latest fashion, online apparel, men's fashion, women's fashion, children's clothing, seasonal fashion, affordable clothes">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Fashionable Clothes | Buy the Latest Fashion Online">
+    <meta property="og:description" content="Discover the latest trends in fashion at our online clothing store. Shop now for trendy clothing, affordable prices, and fast shipping.">
+    <meta property="og:image" content="./brand-logo.svg">
+    <meta property="og:url" content="https://ca-steeln.github.io/clothing-landing-page/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fashionable Clothes | Buy the Latest Fashion Online">
+    <meta name="twitter:description" content="Discover the latest trends in fashion at our online clothing store. Shop now for trendy clothing, affordable prices, and fast shipping.">
+    <meta name="twitter:image" content="./brand-logo.svg">
+
+    <link rel="canonical" href="https://ca-steeln.github.io/clothing-landing-page/">
+
+    <title> Steeln | About Us </title>
+
+    <link href="https://cdn.jsdelivr.net/gh/ca-steeln/clothing-landing-page/build.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <header class="fixed p-2 w-full z-30">
+    <div class="flex items-center justify-between lg:gap-10 gap-4 w-full h-16 px-4 slate-bg rounded-xl z-50">
+
+      <!-- Logo -->
+      <div class="flex place-content-center w-1/6 h-full min-w-max">
+        <a href="/" class="flex items-center md:gap-4">
+          <img src="./brand-logo.svg" alt="Brand" class="aspect-square h-full">
+          <span class="md:text-lg text-sm font-medium light-text-modes">Brand</span>
+        </a>
+      </div>
+
+      <div class="hidden md:flex justify-between md:w-full">
+        <!-- Primary Navigation -->
+        <nav class="flex lg:gap-4 items-center">
+          <a href="/" title="Home" class="px-2 py-1 nav-text hover:bg-slate-300 dark:hover:bg-slate-700 duration-100 rounded-lg"> Home </a>
+          <a href="#details" title="Learn About Us" class="px-2 py-1 nav-text hover:bg-slate-300 dark:hover:bg-slate-700 duration-100 rounded-lg"> Learn More </a>
+          <a href="#contact" title="Contact Us" class="px-2 py-1 nav-text hover:bg-slate-300 dark:hover:bg-slate-700 duration-100 rounded-lg"> Contact </a>
+        </nav>
+
+        <nav class="flex lg:gap-4 gap-2 items-center">
+          <button type="button" title="Theme modes" name="Theme" class="theme-toggle flex gap-2 items-center p-1.5 hover:bg-slate-300 dark:hover:bg-slate-700 duration-100 rounded-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor" class="size-6 text-modes"><path d="M297.2 248.9C311.6 228.3 320 203.2 320 176c0-70.7-57.3-128-128-128S64 105.3 64 176c0 27.2 8.4 52.3 22.8 72.9c3.7 5.3 8.1 11.3 12.8 17.7c0 0 0 0 0 0c12.9 17.7 28.3 38.9 39.8 59.8c10.4 19 15.7 38.8 18.3 57.5L109 384c-2.2-12-5.9-23.7-11.8-34.5c-9.9-18-22.2-34.9-34.5-51.8c0 0 0 0 0 0s0 0 0 0c-5.2-7.1-10.4-14.2-15.4-21.4C27.6 247.9 16 213.3 16 176C16 78.8 94.8 0 192 0s176 78.8 176 176c0 37.3-11.6 71.9-31.4 100.3c-5 7.2-10.2 14.3-15.4 21.4c0 0 0 0 0 0s0 0 0 0c-12.3 16.8-24.6 33.7-34.5 51.8c-5.9 10.8-9.6 22.5-11.8 34.5l-48.6 0c2.6-18.7 7.9-38.6 18.3-57.5c11.5-20.9 26.9-42.1 39.8-59.8c0 0 0 0 0 0s0 0 0 0s0 0 0 0c4.7-6.4 9-12.4 12.7-17.7zM192 128c-26.5 0-48 21.5-48 48c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-44.2 35.8-80 80-80c8.8 0 16 7.2 16 16s-7.2 16-16 16zm0 384c-44.2 0-80-35.8-80-80l0-16 160 0 0 16c0 44.2-35.8 80-80 80z"/></svg>
+
+
+          </button>
+          <a href="#" title="Sign Up" class="flex gap-1.5 lg:gap-2 items-center px-4 py-2 nav-text primary-btn nav-text rounded-lg duration-100"> Sign Up </a>
+        </nav>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="menu-btn" name="Navigation Menu" title="Open Navigation Menu" class="text-gray-300 focus:outline-none">
+          <svg class="w-6 h-6 text-modes" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay" class="hidden md:hidden fixed inset-0 overly-bg -z-10"></div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden mt-2 slate-bg p-4 rounded-xl">
+      <nav class="flex flex-col place-items-center gap-2">
+        <a href="/" title="Home" class="flex items-center justify-center w-full h-10 nav-text text-modes border-2 border-modes rounded-lg focus:border-ps-modes"> Home </a>
+        <a href="#details" title="Learn About Us" class="flex items-center justify-center w-full h-10 nav-text text-modes border-2 border-modes rounded-lg focus:border-ps-modes"> Learn More </a>
+        <a href="#contact" title="Contact Us" class="flex items-center justify-center w-full h-10 nav-text text-modes border-2 border-modes rounded-lg focus:border-ps-modes"> Contact </a>
+
+        <hr class="border-t border-modes w-4/6">
+
+        <button type="button" title="theme modes" name="Theme" class="theme-toggle flex items-center justify-center gap-4 w-full h-10 nav-text duration-100 bg-slate-300 dark:bg-slate-700 border-2 rounded-lg">
+          <!-- <i class="fa-solid fa-circle-half-stroke text-modes text-2xl"></i> -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor" class="size-6 text-modes"><path d="M297.2 248.9C311.6 228.3 320 203.2 320 176c0-70.7-57.3-128-128-128S64 105.3 64 176c0 27.2 8.4 52.3 22.8 72.9c3.7 5.3 8.1 11.3 12.8 17.7c0 0 0 0 0 0c12.9 17.7 28.3 38.9 39.8 59.8c10.4 19 15.7 38.8 18.3 57.5L109 384c-2.2-12-5.9-23.7-11.8-34.5c-9.9-18-22.2-34.9-34.5-51.8c0 0 0 0 0 0s0 0 0 0c-5.2-7.1-10.4-14.2-15.4-21.4C27.6 247.9 16 213.3 16 176C16 78.8 94.8 0 192 0s176 78.8 176 176c0 37.3-11.6 71.9-31.4 100.3c-5 7.2-10.2 14.3-15.4 21.4c0 0 0 0 0 0s0 0 0 0c-12.3 16.8-24.6 33.7-34.5 51.8c-5.9 10.8-9.6 22.5-11.8 34.5l-48.6 0c2.6-18.7 7.9-38.6 18.3-57.5c11.5-20.9 26.9-42.1 39.8-59.8c0 0 0 0 0 0s0 0 0 0s0 0 0 0c4.7-6.4 9-12.4 12.7-17.7zM192 128c-26.5 0-48 21.5-48 48c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-44.2 35.8-80 80-80c8.8 0 16 7.2 16 16s-7.2 16-16 16zm0 384c-44.2 0-80-35.8-80-80l0-16 160 0 0 16c0 44.2-35.8 80-80 80z"/></svg>
+          Theme Mode
+        </button>
+
+        <hr class="border-t border-modes w-4/6">
+
+        <a href="#" title="Sign Up" class="flex items-center justify-center gap-4 w-full h-10 primary-btn nav-text rounded-lg"> Sign Up </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section id="home" class="flex justify-center w-full pt-20 screen-h p-4">
+      <div class="container grid grid-flow-col items-center mx-auto md:gap-4 gap-2 md:w-5/6 w-full">
+
+        <div class="flex flex-col md:gap-8 gap-6 w-fit">
+          <article class="md:space-y-4 space-y-2">
+            <h2 class="text-modes"> Crafting User-Friendly, Custom Landing Pages </h2>
+            <p class="title-desc text-modes"> I specialize in designing clear, user-centric landing pages that bring your business ideas to life. With a focus on intuitive UI/UX and responsive design, I create custom web pages that effectively showcase your brand and engage your audience. Whether you're looking to promote a product, service, or concept, I’m here to help you make a lasting impression online. </p>
+          </article>
+          <nav class="grid grid-flow-col w-fit gap-4 items-center max-[480px]:grid-flow-row max-[480px]:w-full">
+            <a href="#details" title="Explore product details" class="flex items-center justify-center gap-2 h-full sm:px-4 sm:py-2 px-6 py-4 text-sm rounded-lg nav-text regular-btn">
+              Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+            </a>
+            <a href="[store]" class="flex items-center justify-center gap-2 h-full sm:px-4 sm:py-2 px-6 py-4 text-sm rounded-lg nav-text primary-btn"> Customer Support </a>
+          </nav>
+        </div>
+
+        <div class="hidden lg:grid place-items-center h-full">
+          <img src="./a3.png" alt="Brand" class="w-full">
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <section id="details" class="flex justify-center w-full p-4 md:my-60 my-40">
+    <div class="container block mx-auto items-center md:w-5/6 w-full lg:space-y-16 space-y-8">
+      <div class="flex flex-col gap-2 w-full">
+
+        <h2 class="text-ps-modes font-semibold md:text-lg text-base"> Designs That Make an Impact </h2>
+
+        <div class="max-sm:order-2 md:space-y-4 space-y-2 w-full">
+          <h3 class="text-modes font-bold md:text-4xl text-2xl"> Creating Seamless and Engaging Experiences </h3>
+          <p class="title-desc light-text-modes"> Every landing page I design is more than just a visual appeal—it's a tool to connect with your audience. I focus on crafting user-friendly interfaces that not only look great but also deliver a seamless experience, ensuring that your visitors stay engaged and take action. From concept to completion, my goal is to make your business stand out with a website that’s both functional and memorable.</p>
+        </div>
+
+      </div>
+
+      <div class="grid sm:grid-flow-col grid-flow-row ring-1 ring-modes rounded-xl">
+        <article class="md:space-y-4 space-y-2 lg:p-8 md:p-6 p-4 w-full">
+
+          <h3 class="font-bold text-2xl text-modes"> Optimized for Speed </h3>
+          <p class="title-desc text-modes"> Speed is crucial in today’s digital landscape, where users expect instant access to content. I ensure that every landing page I design is optimized for fast loading times, no matter the device or connection speed. By minimizing load times and streamlining content delivery, I help you retain visitors and reduce bounce rates, leading to higher engagement and better conversion rates. Your audience will experience seamless, uninterrupted access to your content, which is essential for keeping them on your page and driving action.</p>
+        </article>
+        <div class="lg:grid sm:hidden grid place-items-center w-fit rounded-xl md:p-4 p-2">
+          <img src="./a2.png" alt="Brand" class="md:w-80 aspect-square rounded-lg bg-white">
+        </div>
+      </div>
+
+      <div class="grid sm:grid-flow-col grid-flow-row ring-1 ring-modes rounded-xl">
+        <article class="md:space-y-4 space-y-2 lg:p-8 md:p-6 p-4 w-full lg:order-2">
+          <h3 class="font-bold text-2xl text-modes"> Driving Sales and Growth </h3>
+          <p class="title-desc text-modes"> A well-designed landing page is a powerful tool for driving sales and business growth. I create pages that not only attract visitors but also convert them into customers. By strategically placing calls to action and optimizing the user journey, I help increase your conversion rates and boost your bottom line. Whether you’re launching a new product or promoting a service, my landing pages are designed to maximize your return on investment, helping your business thrive in a competitive market. With each element crafted to guide users toward taking action, you’ll see tangible results in both sales and overall growth.</p>
+        </article>
+        <div class="lg:grid sm:hidden grid place-items-center w-fit rounded-xl md:p-4 p-2 lg:order-1">
+          <img src="./a4.png" alt="Brand" class="md:w-80 aspect-square rounded-lg bg-white">
+        </div>
+      </div>
+
+      <div class="grid sm:grid-flow-col grid-flow-row ring-1 ring-modes rounded-xl">
+        <article class="md:space-y-4 space-y-2 lg:p-8 md:p-6 p-4 w-full">
+          <h3 class="font-bold text-2xl text-modes"> Responsive Across Devices </h3>
+          <p class="title-desc text-modes"> In a world where users access websites from a variety of devices, responsiveness is key. I design landing pages that automatically adjust to any screen size, providing an optimal viewing experience on smartphones, tablets, and desktops alike. No matter how your audience chooses to view your content, they’ll encounter a layout that’s easy to navigate, visually appealing, and fully functional. By ensuring that your landing page is responsive across all devices, I help you reach a wider audience and provide a consistent brand experience, no matter where your visitors are coming from.</p>
+        </article>
+        <div class="lg:grid sm:hidden grid place-items-center w-fit rounded-xl md:p-4 p-2">
+          <img src="./a5.png" alt="Brand" class="md:w-80 aspect-square rounded-lg bg-white">
+        </div>
+      </div>
+
+      <div class="grid lg:grid-flow-col grid-flow-row ring-1 ring-modes rounded-xl">
+        <article class="md:space-y-4 space-y-2 lg:p-8 md:p-6 p-4 w-full lg:order-2">
+          <h3 class="font-bold text-2xl text-modes"> Strategic Design and Development </h3>
+          <p class="title-desc text-modes"> Every landing page begins with a solid strategy and thoughtful planning. I combine creative ideas with logical development to bring your vision to life. By understanding your business goals and user needs, I craft a design that not only looks great but also functions effectively. My approach ensures that each element of your page serves a purpose, from intuitive navigation to strategically placed content that guides users toward your desired outcome. This blend of creativity and logic results in a landing page that’s not only visually appealing but also aligned with your business objectives. </p>
+        </article>
+        <div class="lg:grid sm:hidden grid place-items-center w-fit rounded-xl md:p-4 p-2 lg:order-1">
+          <img src="./a6.png" alt="Brand" class="md:w-80 aspect-square rounded-lg bg-white">
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="flex w-full sm:p-4 p-2 md:my-60 my-40">
+
+    <div class="container block mx-auto items-center md:w-5/6 w-full lg:space-y-16 space-y-8 ">
+      <div class="flex flex-col gap-2 w-full">
+
+        <h2 class="text-ps-modes font-semibold md:text-lg text-base"> Get in Touch </h2>
+
+        <div class="max-sm:order-2 md:space-y-4 space-y-2 w-full">
+          <h3 class="text-modes font-bold md:text-4xl text-2xl"> We're Here to Help </h3>
+          <p class="title-desc light-text-modes"> Have questions or need assistance? Reach out through any of the provided contact methods. Whether you need help with a purchase, have a specific inquiry, or just want to provide feedback, we're ready to assist. Get the support you need quickly and efficiently.</p>
+        </div>
+
+      </div>
+      <div class="grid items-center justify-center gap-4 col-auto-fit-minmax-frame ">
+
+        <div class="grid justify-items-center items-center text-center gap-2 slate-bg sm:max-w-md h-full rounded-xl p-4">
+
+          <div class="grid place-items-center bg-primary aspect-square w-16 rounded-full ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-light"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" /></svg>
+          </div>
+          <h4 class="font-bold leading-2 text-md light-text-modes w-full">Phone Call</h4>
+          <small class="text-modes font-medium text-lg w-full"> +912 3456 7890 </small>
+          <p class="mt-4 text-xs leading-5 light-text-modes">Call for immediate assistance or inquiries.</p>
+
+        </div>
+
+        <div class="grid justify-items-center items-center text-center gap-2 slate-bg sm:max-w-md h-full rounded-xl p-4">
+
+          <div class="grid place-items-center bg-primary aspect-square w-16 rounded-full ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-light"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25" /></svg>
+          </div>
+          <h4 class="font-bold leading-2 text-md light-text-modes w-full">Email</h4>
+          <small class="text-modes font-medium text-lg w-full"> example@gmail.com </small>
+          <p class="mt-4 text-xs leading-5 light-text-modes">Send us an email for detailed support or questions.</p>
+
+        </div>
+
+        <div class="grid justify-items-center items-center text-center gap-2 slate-bg sm:max-w-md h-full rounded-xl p-4">
+
+          <div class="grid place-items-center bg-primary aspect-square w-16 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-light"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" /></svg>
+          </div>
+          <h4 class="font-bold leading-2 text-md light-text-modes w-full">Location</h4>
+          <small class="text-modes font-medium text-lg w-full"> The Interior Design Studio Company The Courtyard. Quoz 1. Colorado, USA </small>
+          <p class="mt-4 text-xs leading-5 light-text-modes">Visit us in-store for personalized service and product experience.</p>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="p-2 w-full space-y-4 min-h-40">
+    <div class="grid p-4 gap-8 slate-bg rounded-xl">
+      <div class="flex items-center justify-center flex-col gap-4 h-full text-center p-8 ring-1 ring-modes rounded-xl">
+        <h3 class="font-bold leading-2 xl:text-2xl text-xl text-modes w-full"> Ready to Elevate Your Online Presence? </h3>
+        <small class="light-text-modes font-medium text-xs">Take the next step in showcasing your brand with a custom, responsive landing page that drives results. Let's create something impactful together. </small>
+        <a href="#" title="Shop Now" class="flex items-center justify-center mt-6 md:px-4 md:py-2 px-6 py-4 text-sm rounded-lg nav-text primary-btn"> Contact Us </a>
+      </div>
+      <div class="grid md:justify-around justify-items-center md:grid-flow-col grid-flow-row gap-8">
+        <div class="xl:w-40 w-32">
+          <img src="./brand-logo.svg" alt="Brand Logo" class="aspect-square w-full">
+        </div>
+        <nav title="social media" class="grid place-content-center col-auto-fit-minmax-12 grid-flow-col w-fit gap-4">
+          <!-- Social Media -->
+          <a href="#" target="_blank" title="Email address" class="md:w-6 w-8 aspect-square text-modes hover:text-ps-modes rounded-full duration-100">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="size-6"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+          </a>
+          <a href="#" target="_blank" title="Shopify Store" class="md:w-6 w-8 aspect-square text-modes hover:text-ps-modes rounded-full duration-100">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="size-6"><path d="M388.3 104.1a4.7 4.7 0 0 0 -4.4-4c-2 0-37.2-.8-37.2-.8s-21.6-20.8-29.6-28.8V503.2L442.8 472S388.7 106.5 388.3 104.1zM288.7 70.5a116.7 116.7 0 0 0 -7.2-17.6C271 32.9 255.4 22 237 22a15 15 0 0 0 -4 .4c-.4-.8-1.2-1.2-1.6-2C223.4 11.6 213 7.6 200.6 8c-24 .8-48 18-67.3 48.8-13.6 21.6-24 48.8-26.8 70.1-27.6 8.4-46.8 14.4-47.2 14.8-14 4.4-14.4 4.8-16 18-1.2 10-38 291.8-38 291.8L307.9 504V65.7a41.7 41.7 0 0 0 -4.4 .4S297.9 67.7 288.7 70.5zM233.4 87.7c-16 4.8-33.6 10.4-50.8 15.6 4.8-18.8 14.4-37.6 25.6-50 4.4-4.4 10.4-9.6 17.2-12.8C232.2 54.9 233.8 74.5 233.4 87.7zM200.6 24.4A27.5 27.5 0 0 1 215 28c-6.4 3.2-12.8 8.4-18.8 14.4-15.2 16.4-26.8 42-31.6 66.5-14.4 4.4-28.8 8.8-42 12.8C131.3 83.3 163.8 25.2 200.6 24.4zM154.2 244.6c1.6 25.6 69.3 31.2 73.3 91.7 2.8 47.6-25.2 80.1-65.7 82.5-48.8 3.2-75.7-25.6-75.7-25.6l10.4-44s26.8 20.4 48.4 18.8c14-.8 19.2-12.4 18.8-20.4-2-33.6-57.2-31.6-60.8-86.9-3.2-46.4 27.2-93.3 94.5-97.7 26-1.6 39.2 4.8 39.2 4.8L221.4 225.4s-17.2-8-37.6-6.4C154.2 221 153.8 239.8 154.2 244.6zM249.4 82.9c0-12-1.6-29.2-7.2-43.6 18.4 3.6 27.2 24 31.2 36.4Q262.6 78.7 249.4 82.9z"/></svg>
+          </a>
+          <a href="#" target="_blank" title="Whatsapp Chat" class="md:w-6 w-8 aspect-square text-modes hover:text-ps-modes rounded-full duration-100">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" class="size-6"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+          </a>
+          <a href="#" target="_blank" title="Facebook Page" class="md:w-6 w-8 aspect-square text-modes hover:text-ps-modes rounded-full duration-100">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="size-6"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+          </a>
+          <a href="#" target="_blank" title="Instagram Page" class="md:w-6 w-8 aspect-square text-modes hover:text-ps-modes rounded-full duration-100">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="size-6"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+          </a>
+        </nav>
+      </div>
+
+    </div>
+    <div class="grid place-content-center w-full h-fit p-4 px-1 slate-bg rounded-xl">
+      <small title="Copyright" class="text-md font-medium light-text-modes"> &copy; 2024 Steeln. All rights reserved. </small>
+    </div>
+
+  </footer>
+
+  <script src="./script.js" defer></script>
+
+</body>
+</html>
+
